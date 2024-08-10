@@ -22,6 +22,8 @@ print(decOne())#HELLO THERE
 print(sayHi())#hello there
 
 #TILL NOW WE NOT DO ANY THING NEW ..
+
+#--------------------------------------------------------------------------------------
 '''
 HERE DECORATOR WILL COME 
 '''
@@ -36,4 +38,19 @@ def uppercaseDecorators(function):
 def sayHi():
     return 'hello there'
 
-print(sayHi())
+print(sayHi())#HELLO THERE
+
+
+#ANTHOUR EXAMPLE
+
+def splitAnyString(function):
+    def wrapper():
+        func = function()
+        splitStr = func.split()
+        return splitStr
+    return wrapper
+@splitAnyString
+def sayAnything():
+    return f'HELLO ITI PYTHON TRACK'
+
+print(sayAnything())
