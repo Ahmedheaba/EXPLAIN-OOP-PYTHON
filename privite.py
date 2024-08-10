@@ -26,30 +26,5 @@ OBJECT._CLASSNAME__VARIABLE NAMR
 print(count._JustCounter__secretCount)
 
 
-
-
-
-
-
-
-class Person:
-    def __init__(self, fname, lname):
-        self.fname = fname
-        self.lname = lname
-
-    def printData(self):
-        print(f'HELLO {self.fname} {self.lname}')
-
-class Child(Person):
-    def __init__(self, fname, lname, year):
-        super().__init__(fname, lname)
-        self.year = year
-    
-    def printData(self):
-        print(f'HELLO {self.fname} {self.lname} AND YOUUR YEAR IS{self.year}')
-
-    
-p1 = Child('AHMED', 'HEABA', 2025)
-p2 = Person('FARIDA', 'AHMED')       
-p1.printData()
-p2.printData()
+#IF YOU NEED TO LEARN MORE THIS IS LINK WILL BE HELP YOU
+#https://www.geeksforgeeks.org/encapsulation-in-python/
