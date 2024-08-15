@@ -12,6 +12,13 @@ def uppercaseDecorators(function):
         return createUpeer
     return wrapper
 
+def splitAnyString(function):
+    def wrapper():
+        func = function()
+        splitStr = func.split()
+        return splitStr
+    return wrapper
+    
 #this is function just return simple string
 def sayHi():
     return 'hello there'
@@ -43,14 +50,11 @@ print(sayHi())#HELLO THERE
 
 #ANTHOUR EXAMPLE
 
-def splitAnyString(function):
-    def wrapper():
-        func = function()
-        splitStr = func.split()
-        return splitStr
-    return wrapper
+
+
+
 @splitAnyString
 def sayAnything():
     return f'HELLO ITI PYTHON TRACK'
 
-print(sayAnything())
+print(sayAnything())#['HELLO', 'ITI', 'PYTHON', 'TRACK']
