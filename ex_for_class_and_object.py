@@ -55,3 +55,4 @@ del empOne.hasCar
     #+-------|--------+|--------+|--------+
 
 #print(empOne.hasCar)    #AttributeError: 'Empolyee' object has no attribute 'hasCar'
+
